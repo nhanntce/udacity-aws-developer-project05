@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "course",
+  "type": "object",
+  "properties": {
+    "name" : {
+      "type": "string",
+      "minLength": 1
+    },
+    "duration": {
+      "type": "number"
+    },
+    "cost": {
+      "type": "number"
+    },
+    "progress": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "name",
+    "duration",
+    "cost",
+    "progress"
+  ],
+  "additionalProperties": false
+}
