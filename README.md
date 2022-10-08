@@ -8,3 +8,7 @@
 ## Note:
  - User must be login to to use this application.
  - User can not view course of another user.
+
+## How to use the application
+
+![Alt text](images/manual.png?raw=true "Image 1")
