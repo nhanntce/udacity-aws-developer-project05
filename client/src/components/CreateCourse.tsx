@@ -62,13 +62,14 @@ export class CreateCourse extends React.PureComponent<
 
       const addCourseReq: CreateCourseRequest = {
         name: this.state.name,
-        cost: this.state.cost,
-        duration: this.state.duration
+        cost: parseFloat(this.state.cost + ''),
+        duration: parseFloat(this.state.duration + '')
       }
 
-      const uploadUrl = await createCourse(
+      await createCourse(
         this.props.auth.getIdToken(),
         addCourseReq
+
       )
 
       alert('Add course was successfully!')
