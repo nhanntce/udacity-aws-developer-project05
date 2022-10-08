@@ -30,7 +30,7 @@ export class CourseAccess {
   }
 
   async createCourse(course: Course): Promise<Course> {
-    log.info(`[START] Create todo: ${JSON.stringify(course)}`);
+    log.info(`[START] Create course: ${JSON.stringify(course)}`);
     await this.docClient
       .put({
         TableName: this.courseTable,
