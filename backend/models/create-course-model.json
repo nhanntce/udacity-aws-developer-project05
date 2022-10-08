@@ -8,10 +8,12 @@
       "minLength": 1
     },
     "duration": {
-      "type": "number"
+      "type": "number",
+      "minimum": 0
     },
     "cost": {
-      "type": "number"
+      "type": "number",
+      "minimum": 0
     }
   },
   "required": [
